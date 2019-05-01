@@ -43,10 +43,10 @@ if not os.path.exists(outPutPath):
 
 
 # 20x20
-# img0 = originImg.resize((20,20), Image.ANTIALIAS)
+img0 = originImg.resize((20,20), Image.ANTIALIAS)
 img1 = originImg.resize((40,40), Image.ANTIALIAS)
 img2 = originImg.resize((60,60), Image.ANTIALIAS)
-# img0.save(outPutPath + 'appIcon20x20.png',"png")
+img0.save(outPutPath + 'appIcon20x20.png',"png")
 img1.save(outPutPath + 'appIcon20x20@2x.png',"png")
 img2.save(outPutPath + 'appIcon20x20@3x.png',"png")
 
@@ -59,10 +59,10 @@ img4.save(outPutPath + 'appIcon29x29@2x.png',"png")
 img5.save(outPutPath + 'appIcon29x29@3x.png',"png")
 
 # 40x40
-# img6 = originImg.resize((40,40), Image.ANTIALIAS)
+img6 = originImg.resize((40,40), Image.ANTIALIAS)
 img7 = originImg.resize((80,80), Image.ANTIALIAS)
 img8 = originImg.resize((120,120), Image.ANTIALIAS)
-# img6.save(outPutPath + 'appIcon40x40.png',"png")
+img6.save(outPutPath + 'appIcon40x40.png',"png")
 img7.save(outPutPath + 'appIcon40x40@2x.png',"png")
 img8.save(outPutPath + 'appIcon40x40@3x.png',"png")
 
@@ -72,18 +72,17 @@ img10 = originImg.resize((180,180), Image.ANTIALIAS)
 img9.save(outPutPath + 'appIcon60x60@2x.png',"png")
 img10.save(outPutPath + 'appIcon60x60@3x.png',"png")
 
-
-
-imgrrr = originImg.resize((1024,1024), Image.ANTIALIAS)
-imgrrr.save(outPutPath + 'appIcon1024x1024.png',"png")
-
+img1024 = originImg.resize((1024,1024), Image.ANTIALIAS)
+img1024.save(outPutPath + 'appIcon1024x1024.png',"png")
+    
+    
 # ipad
-# img11 = originImg.resize((76,76), Image.ANTIALIAS)
-# img12 = originImg.resize((152,152), Image.ANTIALIAS)
-# img13 = originImg.resize((167,167), Image.ANTIALIAS)
-# img11.save(outPutPath + 'appIcon76x76.png',"png")
-# img12.save(outPutPath + 'appIcon76x76@2x.png',"png")
-# img13.save(outPutPath + 'appIcon83.5x83.5@2x.png',"png")
+img11 = originImg.resize((76,76), Image.ANTIALIAS)
+img12 = originImg.resize((152,152), Image.ANTIALIAS)
+img13 = originImg.resize((167,167), Image.ANTIALIAS)
+img11.save(outPutPath + 'appIcon76x76.png',"png")
+img12.save(outPutPath + 'appIcon76x76@2x.png',"png")
+img13.save(outPutPath + 'appIcon83.5x83.5@2x.png',"png")
 
 # 创建Contents.json文件
 
